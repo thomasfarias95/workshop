@@ -17,12 +17,13 @@ import java.util.TimeZone;
 
 @Configuration
 public class Instantiation implements CommandLineRunner {
-    
+
     @Autowired
     private UserRepository userRepository;
 
     @Autowired
     private PostRepository postRepository;
+
     @Override
     public void run(String... args) throws Exception {
 
@@ -54,3 +55,4 @@ public class Instantiation implements CommandLineRunner {
         userRepository.save(maria);
     }
 }
+
