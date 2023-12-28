@@ -25,7 +25,7 @@ public class Instantiation implements CommandLineRunner {
     private PostRepository postRepository;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... arg0) throws Exception {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
@@ -53,6 +53,7 @@ public class Instantiation implements CommandLineRunner {
 
         maria.getPosts().addAll(Arrays.asList(post1, post2));
         userRepository.save(maria);
+
     }
 }
 
